@@ -34,10 +34,21 @@ int peek(){
     }
 }
 
+int display(){
+    if(top==-1){
+        printf("stack is empty\n");
+    }
+    else{
+        for(int i=top;i>=0;i--){
+            printf("%d\n",stack[i]);
+        }
+    }
+}
+
 int main(){
     int ch;
     while (1){
-        printf("1.push\n2.pop\n3.peek\n4.exit\n");
+        printf("1.push\n2.pop\n3.peek\n4.display\n5.exit\n");
         printf("enter your choice:");
         scanf("%d",&ch);
         switch (ch){
@@ -66,6 +77,11 @@ int main(){
                     break;
                 }
             case 4:
+            {
+                display();
+                break;
+            }
+            case 5:
                 {
                     return 0;
                 }
