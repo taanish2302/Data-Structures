@@ -1,4 +1,6 @@
-/*#include <stdio.h>
+//Binary Search
+/*
+#include <stdio.h>
 int main(){
     int arr[100],n,key,f,l,mid,flag=0;
     printf("number of elements:");
@@ -37,6 +39,8 @@ int main(){
     return 0;
     }
 */
+
+
 //linear search
 #include <stdio.h>
 int main(){
@@ -63,5 +67,6 @@ int main(){
     else
         printf("Element not found");
         return 0;
+
 
 }
